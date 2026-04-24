@@ -1,0 +1,20 @@
+body { background: rgb(124, 196, 210); }
+
+img { width: 700px; }
+
+.top-section { background: rgb(200, 189, 110); margin: 30px; padding: 40px; 
+    display: flex; flex-direction: column;
+    gap: 20px; }
+
+.mainsec {background: rgb(110, 200, 130); 
+    margin: 30px; 
+    padding: 40px; display: flex; flex-direction: row;
+    gap: 20px; }
+
+html { font-family: Arial, Helvetica, sans-serif; font-size: 18pt; }
+
+#truck, #road { padding: 10px; margin: 10px; }
+
+
+
+
