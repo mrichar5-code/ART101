@@ -36,7 +36,7 @@ $("#mileage-button").click(function () {
 $("#where-to").click(function () {
 
  placesCount=count-1;
- $("#where-to").html(" You are on your way to: " + places[placesCount] );
+ $("#where-to").html(" You are on your way to: " + places[placesCount]);
 
  console.log(count);
 
