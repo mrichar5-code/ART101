@@ -32,6 +32,8 @@
    display: flex;
    width: 100px;
    height: 100px;
+  
 }
 
-.eye { height: 22px; width: 18px; border: 3px solid #000; border-radius: 20px; background: #fff; font-size: 120%; font-weight: bolder;}
+.eye { height: 22px; width: 18px; border: 3px solid #000; border-radius: 20px;
+    background: #fff; font-size: 120%; font-weight: bolder;}
