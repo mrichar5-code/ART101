@@ -1,6 +1,8 @@
 let count = 0; 
-let places=["Vegas", "Texas", "Washington", "San Diego", "Nevada"];
-let placesCount;
+let places=["Vegas", "Texas", "Washington", "San Diego", "Nevada", "California", "Maine", "Maryland", "Oregon", 
+    "Arizona", "New York", "Santa Cruz", "Montana", "North Carolina", "Tennessee", "Idaho", 
+];
+let placesCount = 0; 
 
 let environmentTitle = "The Roadtrip That Keeps Going";
 
@@ -12,7 +14,7 @@ let buttonCreature = {
 
 $("#mileage-button").click(function () {
 
-    count = count + 1; 
+    count = count + 100; 
     let arrayPosition = count - 1;
 
     let message = "<p>You have driven " + count + " miles.</p>";
@@ -27,10 +29,14 @@ $("#mileage-button").click(function () {
 
 $("#where-to").click(function () {
 
- placesCount=count-1;
- $("#where-to").html(" You are on your way to: " + places[placesCount]);
- console.log(count);
+    $("#where-to").html("You are on your way to: " + places[placesCount]);
+    placesCount++;
 
+    if (placesCount >= places.length) {
+        placesCount = 0;
+    }
+
+    console.log(placesCount);
 
 });
 
