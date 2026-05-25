@@ -10,9 +10,15 @@ $("#needy-button").click(function () {
     count = count + 1;
 
     let arrayPosition = count - 1;
+
+    if (arrayPosition >= buttonCreature.moods.length) {
+        count = 1;
+        arrayPosition = 0; 
+    }
     let currentMood = buttonCreature.moods[arrayPosition];
     let message = "<p>You clicked me " + count + " times.</p>";
    
+    
     message = message + "<p>My current mood is " + currentMood + ".</p>";
    
     message = message + "<p>My name is " + buttonCreature.name + ".</p>";

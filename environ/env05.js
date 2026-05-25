@@ -8,15 +8,7 @@ let buttonCreature = {
     name: "mileage button",
 };
 
-let environmentElements = ["asphalt", "warm breeze", "music", "truck"];
 
-let mainEntity = {
-    name: "truck",
-    type: "soft border",
-    mood: "welcoming",
-    isMoving: true,
-    favoriteElement: environmentElements[1]
-};
 
 $("#mileage-button").click(function () {
 
@@ -71,5 +63,8 @@ $("#headlights").click(function () {
     $("#road").attr("src", "nightroad.jpg");
     $("#truck").attr("src", "nightroad2.jpg");
     $("body").css("background-color", "#02020a");
+    $("#output").css("color", "#f4f4fb");
+    $("#environment-output").css("color", "#f4f4fb");
+
 
 });
