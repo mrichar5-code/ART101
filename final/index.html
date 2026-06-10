@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>our-spooky-house</title>
+    <link href="house.css" rel="stylesheet" type="text/css">
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="house.js" DEFER></script>
+  
+</head>
+<body>
+    <audio src="resources/audio/title-screen-theme.mp3" id="audioSrc" autoplay></audio>
+    <div id="header" class="glow">
+        <h1> our-spooky-house </h1>
+    </div>
+
+    <div id="counter" >
+      <p id="counter-message">key counter</p>
+       
+            <div id="k1" class="key hidden">
+            </div>
+
+            <div id="k2"  class="key hidden">
+            </div>
+
+            <div id="k3"  class="key hidden">
+           </div>
+
+    </div>
+     <div id="counter2">
+      <p id="ghost-message">ghost counter</p>
+       
+            <div id="g1" class="ghost hidden">
+            </div>
+
+            <div id="g1"  class="ghost hidden">
+            </div>
+
+            <div id="g3"  class="ghost hidden">
+           </div>
+
+    </div>
+    <div id="gameover" class="page hidden">
+        <p>you lost<p>
+    </div>
+   
+    <div id="starter" class="page" >
+
+            <div id="instructions">
+                    <p> how to play:<p>
+                    <p> click doors and <p>
+                        find the keys<p>
+                        dont let the ghosts<p>
+                        get you!
+            </div>
+            <div id="start_button" >
+                <p>Play<p>
+            </div>
+    </div>
+            <div id="room1" class="page room" hidden>
+                   <div id="door1" class="doors">
+                     <p>door 1<p> 
+                    </div>
+                 <div id="door2" class="doors">
+                    <p>door 2<p>      
+                 </div>
+                 <div id="door3" class="doors">
+                     <p>door3<p> 
+                </div>
+                 <div id="door4" class="doors">
+                     <p>door4<p>
+                 </div> 
+            </div>
+
+            <div id="room2" class="page room" hidden>
+                <p> <mark>this is room#2<mark><p>
+                        <div id="item1" key="k1" class="item key">
+                          <img=>
+                        </div>
+                <div id="door2leave2" class="doors">
+                    <p>door2leave<p>
+                </div>
+              
+                 
+            </div>
+            <div id="room3" class="page room" hidden>
+                <p>this is room#3</p>
+                    
+                <div id="door2leave3" class="doors">
+                <p>door2leave</p>
+                </div>
+                 <div id="item2" key="k2" class="item key"></div>
+            </div>
+            <div id="room4" class="page room" hidden>
+                <p>this is room#4<p>
+                    
+                <div id="door2leave4" class="doors">
+                    <p>door2leave<p>
+                </div>
+                <div id="item3" ghost="g1" class="item2 ghost"><img src="resources/images/scaryghost2.gif"></div>
+                <div id="new" class="doors hidden">
+                    <img src="resources/images/trapdoor.png">
+                </div>
+            </div>
+            <div id="room5" class="page room" hidden>
+                <p>this is room#5</p>
+                <div id="door2leave5" class="doors">
+                    <p>door2leave<p>
+                 
+                </div>
+            </div>
+            
+            <div id="finalroom" class="page room" hidden>
+                <p> you made it out!</p>
+                
+            </div>
+           
+    <!-- All visible page content goes between <body> and </body> -->
+
+</body>
+</html>

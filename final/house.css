@@ -1,0 +1,208 @@
+body{
+    background: grey;
+
+}
+#counter{
+    background:green;
+    position: absolute;
+    top:5px;
+    right:5px;
+    
+    display: flex;
+
+}
+.key{
+    margin: auto;
+    position: relative;
+    width: 30px; 
+    height: 30px;
+    background-image: url('resources/images/key.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#counter2{
+    background:red;
+    position: absolute;
+    bottom:5px;
+    right:5px;
+    height:300px;
+    border: solid rgb(8, 45, 75) 3px;
+
+
+}
+.ghost{
+    margin: auto;
+    position: relative;
+    width: 30px; height: 30px;
+    background-color: black;
+    background-size: contain;
+}
+.hidden {
+    display: none;
+}
+
+.page{
+     border: 0.5rem solid rgba(87, 69, 69, 0.926);
+     width: 1000px; 
+     height: 600px;
+     margin: auto;
+     position: relative;
+   
+}
+#instructions{
+    background: beige;
+    width: fit-content;
+    position: relative;
+    right:50px;
+    top: 40px;
+}
+
+#start_button{
+    position:absolute;
+    top: 80%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    background-color: rgb(122, 145, 160);
+    width: 100px; 
+    text-align: center;
+    border: 0.5rem solid rgba(87, 69, 69, 0.926);
+    text-shadow: #2222dd;
+
+}
+
+#starter {
+    background-image: url("resources/images/outside_intrance.svg");
+    background-size: contain;
+}
+
+#room1{
+     background-image: url("resources/images/spookyentrance.png");
+     background-size:  cover;
+     background-repeat: no-repeat;
+}
+
+
+.doors{
+    background: brown;
+    
+    position:absolute;
+}
+#door1{
+    bottom: 20px;
+}
+#door2{
+    bottom: 20px;
+    left: 50px;
+}
+
+#door3{
+    bottom: 20px;
+    left: 100px;
+}
+
+#door4{
+    bottom: 20px;
+    left: 150px;
+}
+
+#new{
+    bottom: 20px;
+    left: 200px;
+    width:fit-content;
+    position:relative
+}
+#new img { width: 100px;;}
+
+#gameover{
+    background-color: red;
+    border: 1px solid #2222dd;
+     width: 600px; 
+     height: 500px;
+     margin: auto;
+     position: relative;
+
+}
+
+#room2{
+     background-image: url("resources/images/SeanceRoom.jpeg");
+     background-size:  cover;
+     background-repeat: no-repeat;
+
+}
+
+#item1{
+    top: 400px;
+    left:0px;
+  }
+
+#room4{
+     background-image: url("resources/images/hallway1.jpeg");
+     background-size:  cover;
+     background-repeat: no-repeat;
+
+}
+
+#turn_back{
+    left: 350px;
+    bottom: 150px;
+}
+#item{
+    top: 100px;
+    right:10px;
+    border: 1px solid blue;
+    
+}
+#item2{
+    top: 460px;
+    right:100px;
+
+   
+    
+}
+ 
+#item3 img {
+    width: 400px;
+}
+
+#room3{
+    background-image: url("resources/images/attic_room.webp");
+    background-size: cover;
+
+}
+
+#room5 {
+    background-image: url("resources/images/scaryghost4.gif");
+    background-size: cover;
+
+}
+#item4{
+    top: 100px;
+    right:10px;
+    background-image: url("resources/images/scaryghost4.gif");
+    background-size: cover;
+    
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#finalroom {
+    background-image: url("resources/images/backyard.jpg");
+    background-size: cover;
+
+}
+
+#finalroom p {
+font-size: 100px;
+color: rgb(157, 22, 22);
+text-align: center;
+}
